@@ -11,7 +11,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
   const { novelId, volumeId, chapterId } = await params
 
   return (
-    <div className="grid h-full grid-cols-2 overflow-hidden">
+    <div className="grid h-full grid-cols-2 grid-rows-1 overflow-hidden">
       <ChapterEditor
         chapterId={chapterId}
         novelId={novelId}

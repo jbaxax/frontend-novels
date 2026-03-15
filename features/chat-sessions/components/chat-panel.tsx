@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react"
 import { Send, Plus, Trash2, Bot, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
-import { ScrollArea } from "@/components/ui/scroll-area"
 import {
   Select,
   SelectContent,
@@ -161,7 +160,7 @@ export function ChatPanel({ chapterId }: ChatPanelProps) {
       </div>
 
       {/* Messages area */}
-      <ScrollArea className="flex-1 min-h-0">
+      <div className="flex-1 overflow-y-auto min-h-0">
         <div className="flex flex-col gap-4 p-4">
           {!selectedSessionId ? (
             <div className="flex flex-col items-center justify-center gap-3 py-16 text-center">
@@ -200,7 +199,7 @@ export function ChatPanel({ chapterId }: ChatPanelProps) {
 
           <div ref={bottomRef} />
         </div>
-      </ScrollArea>
+      </div>
 
       <Separator />
 
