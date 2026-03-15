@@ -8,5 +8,5 @@ export const metadata = { title: "Reglas del mundo" }
 
 export default async function WorldRulesPage({ params }: WorldRulesPageProps) {
   const { novelId } = await params
-  return <WorldRuleList novelId={novelId} />
+  return <div className="h-full overflow-auto p-6"><WorldRuleList novelId={novelId} /></div>
 }

@@ -8,5 +8,5 @@ export const metadata = { title: "Capítulos" }
 
 export default async function ChaptersPage({ params }: ChaptersPageProps) {
   const { novelId, volumeId } = await params
-  return <ChapterList volumeId={volumeId} novelId={novelId} />
+  return <div className="h-full overflow-auto p-6"><ChapterList volumeId={volumeId} novelId={novelId} /></div>
 }

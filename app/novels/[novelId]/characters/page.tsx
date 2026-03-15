@@ -8,5 +8,5 @@ export const metadata = { title: "Personajes" }
 
 export default async function CharactersPage({ params }: CharactersPageProps) {
   const { novelId } = await params
-  return <CharacterList novelId={novelId} />
+  return <div className="h-full overflow-auto p-6"><CharacterList novelId={novelId} /></div>
 }

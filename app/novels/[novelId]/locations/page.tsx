@@ -8,5 +8,5 @@ export const metadata = { title: "Ubicaciones" }
 
 export default async function LocationsPage({ params }: LocationsPageProps) {
   const { novelId } = await params
-  return <LocationList novelId={novelId} />
+  return <div className="h-full overflow-auto p-6"><LocationList novelId={novelId} /></div>
 }

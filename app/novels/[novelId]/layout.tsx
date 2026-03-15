@@ -27,7 +27,7 @@ export default async function NovelLayout({ children, params }: NovelLayoutProps
   const { novelId } = await params
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex h-screen overflow-hidden">
       <aside className="flex w-56 shrink-0 flex-col border-r bg-muted/30 px-3 py-4">
         <Button asChild variant="ghost" size="sm" className="mb-4 justify-start px-2">
           <Link href="/novels">
@@ -56,7 +56,7 @@ export default async function NovelLayout({ children, params }: NovelLayoutProps
         </nav>
       </aside>
 
-      <main className="flex-1 overflow-auto p-6">{children}</main>
+      <main className="flex-1 overflow-hidden">{children}</main>
     </div>
   )
 }

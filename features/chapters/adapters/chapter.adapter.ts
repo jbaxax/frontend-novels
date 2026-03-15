@@ -10,5 +10,6 @@ export function chapterFromApi(data: ChapterApiResponse): Chapter {
     content: data.content,
     status: data.status,
     createdAt: new Date(data.created_at),
+    characters: data.characters,
   }
 }

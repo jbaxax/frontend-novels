@@ -8,5 +8,5 @@ export const metadata = { title: "Timeline" }
 
 export default async function TimelinePage({ params }: TimelinePageProps) {
   const { novelId } = await params
-  return <TimelineEventList novelId={novelId} />
+  return <div className="h-full overflow-auto p-6"><TimelineEventList novelId={novelId} /></div>
 }
