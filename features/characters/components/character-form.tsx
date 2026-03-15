@@ -81,7 +81,7 @@ export function CharacterForm({
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent className="w-full overflow-y-auto sm:max-w-lg">
+      <SheetContent className="w-full overflow-y-auto sm:max-w-lg p-6">
         <SheetHeader className="mb-4">
           <SheetTitle>
             {isEditing ? `Editar — ${defaultValues?.name}` : "Nuevo personaje"}

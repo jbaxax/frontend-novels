@@ -4,6 +4,7 @@ export type RuleCategory =
   | "social"
   | "geography"
   | "biology"
+  | "adult"
 
 export interface WorldRule {
   id: string

@@ -29,6 +29,7 @@ const categoryLabels: Record<string, string> = {
   social: "Social",
   geography: "Geografía",
   biology: "Biología",
+  adult: "Adulto",
 }
 
 interface WorldRuleFormProps {

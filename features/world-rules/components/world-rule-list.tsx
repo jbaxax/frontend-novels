@@ -47,6 +47,10 @@ const categoryConfig: Record<RuleCategory, { label: string; className: string }>
     label: "Biología",
     className: "bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-400",
   },
+  adult: {
+    label: "Adulto",
+    className: "bg-rose-100 text-rose-800 dark:bg-rose-900/30 dark:text-rose-400",
+  },
 }
 
 interface WorldRuleRowProps {
